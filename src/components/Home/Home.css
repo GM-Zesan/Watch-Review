@@ -18,7 +18,7 @@ h1{
 .review-container{
     align-items: center;
     justify-content: center;
-    grid-row-gap: 50px;
+    grid-row-gap: 70px;
 }
 .review-btn{
     text-align: center;
