@@ -22,3 +22,6 @@
 .custom-navbar li a:hover {
     color: #ea9531;
 }
+.custom-navbar li a.active{
+    color: #ea9531;
+}

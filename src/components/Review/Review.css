@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: space-around;
     transition: .3s all ease;
-    
+    padding: 8px 14px;
+    border-radius: 5px;
 }
 .review:hover{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
