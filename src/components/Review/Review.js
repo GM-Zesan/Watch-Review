@@ -1,5 +1,9 @@
-import React from 'react';
-import "./Review.css"
+
+import { faGrinStars, faStar, faStarAndCrescent, faStarHalf, faStarHalfAlt, faStarHalfStroke } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import Rating from "react-rating";
+import "./Review.css";
 const Review = (props) => {
     const { name, description, rating } = props.review;
     return (
@@ -14,8 +18,21 @@ const Review = (props) => {
                 </p>
                 <p>
                     <small>
-                        <strong>Rating :</strong> {rating}
+                        <strong>Rating :</strong>
                     </small>
+                    <Rating
+                        initialRating={rating}
+                        emptySymbol={<FontAwesomeIcon icon={faStar} />}
+                        fullSymbol={
+                            <FontAwesomeIcon
+                                style={{ color: "goldenrod" }}
+                                icon={faStar}
+                            />
+                        }
+                        fractions={2}
+                        readonly
+                    />
+                    <small>({rating})</small>
                 </p>
             </div>
         </div>

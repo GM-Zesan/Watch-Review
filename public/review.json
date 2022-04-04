@@ -2,7 +2,7 @@
     {
         "id": "624a05a8bc6164f13279966d",
         "picture": "http://placehold.it/32x32",
-        "rating": 5,
+        "rating": 4.5,
         "description": "Nice",
         "name": "Francine Terry"
     },
@@ -30,7 +30,7 @@
     {
         "id": "624a05a8d06800e9fce96a0a",
         "picture": "http://placehold.it/32x32",
-        "rating": 2,
+        "rating": 2.5,
         "description": "Below Avarage",
         "name": "Jill Lowe"
     },
