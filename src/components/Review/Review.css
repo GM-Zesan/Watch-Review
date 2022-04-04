@@ -1,0 +1,19 @@
+.review{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid lightgray; */
+    transition: .3s all ease;
+    
+}
+.review:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.reviewer-info h5{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.reviewer-info p{
+    margin-bottom: 0;
+}

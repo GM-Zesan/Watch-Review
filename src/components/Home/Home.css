@@ -1,0 +1,37 @@
+.hero-section{
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-weight: 900;
+    font-size: 50px;
+    background: linear-gradient(to right, rgb(4, 4, 77),
+                    #055cb9, rgb(4, 4, 77), #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.review-section h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+.review-container{
+    align-items: center;
+    justify-content: center;
+    grid-row-gap: 50px;
+}
+.review-btn{
+    text-align: center;
+    margin-top: 50px;
+}
+.review-btn a{
+    padding: 7px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-image: linear-gradient(#066cd8, rgb(4, 4, 77));
+    opacity: .82;
+    transition: .3s all ease;
+}
+.review-btn a:hover{
+    opacity: 1;
+}

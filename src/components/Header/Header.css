@@ -1,0 +1,23 @@
+.custom-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: initial;
+    background-image: linear-gradient(#055cb9, rgb(4, 4, 77));
+    height: 80px;
+    padding: 0px 50px;
+}
+
+.custom-navbar li {
+    list-style: none;
+}
+.custom-navbar li a {
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.2s;
+}
+.custom-navbar li a:hover {
+    color: #ea9531;
+}
