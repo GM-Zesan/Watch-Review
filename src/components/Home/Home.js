@@ -3,14 +3,13 @@ import "./Home.css";
 import heroImg from "../../images/1.jpg";
 import Review from "../Review/Review";
 import { Link } from "react-router-dom";
+import useReview from "../../hooks/useReview";
 const Home = () => {
-    const [reviews, setReviews] = useState([]);
+    const [reviews, setReviews] = useReview();
+    const [homeReviews, setHomeReviews] = useState([]);
     useEffect(() => {
-        fetch("review.json")
-            .then((res) => res.json())
-            .then((data) => setReviews(data));
-        
-    },[]);
+        setHomeReviews(reviews.slice(0, 3));
+    }, [reviews]);
     return (
         <div className="container">
             <div className="hero-section row mt-4">
@@ -31,11 +30,11 @@ const Home = () => {
             <div className="review-section my-5">
                 <h2 className="mb-5">Customers Review</h2>
                 <div className="review-container row">
-                    {reviews.map((review) => (
+                    {homeReviews.map((review) => (
                         <Review key={review.id} review={review}></Review>
                     ))}
                 </div>
-                <div className="review-btn">
+                <div className="review-btn py-4">
                     <Link to="/reviews">See All Reviews</Link>
                 </div>
             </div>
