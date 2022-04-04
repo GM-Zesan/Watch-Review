@@ -5,11 +5,11 @@ import React from "react";
 import Rating from "react-rating";
 import "./Review.css";
 const Review = (props) => {
-    const { name, description, rating } = props.review;
+    const { name, picture, description, rating } = props.review;
     return (
         <div className="review col-md-4">
-            <div>
-                <p>Image</p>
+            <div className="review-pic">
+                <img src={picture} alt="" />
             </div>
             <div className="reviewer-info">
                 <h5>{name}</h5>
